@@ -1,0 +1,44 @@
+{
+    "schemaVersion": "1.0.0",
+    "imports": [
+        "js/aw-checkbox.directive",
+        "js/aw-widget.directive",
+        "js/aw-panel-section.directive"
+    ],
+
+    "data": {
+        "isItemInLinkOneEquipmentManual": {
+            "displayName": "Is Item In LinkOne Equipment Manual",
+            "type": "BOOLEAN",
+            "isRequired": "false",
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": "",
+            "labelPosition": "PROPERTY_LABEL_AT_RIGHT"
+        },
+        "LinkOneEquipmentMaterial": {
+            "displayName": "Link One Equipment Material",
+            "type": "STRING",
+            "isRequired": "true",
+            "maxLength": 128,
+            "labelPosition": "PROPERTY_LABEL_AT_TOP"
+        },
+        "LinkOneEquipmentPart": {
+            "displayName": "Link One Equipment Part",
+            "type": "STRING",
+            "isRequired": "false",
+            "maxLength": 128,
+            "labelPosition": "PROPERTY_LABEL_AT_TOP"
+        }
+    },
+    "actions": {
+        "makePartRequired": {
+            "actionType": "JSFunction",
+            "method": "makePartRequired",
+            "inputData": {
+                "data": "{{data}}"
+            },
+            "deps": "js/demoService"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "name": "demo",
+    "description": "This is the demo module",
+    "skipTest": true
+}
